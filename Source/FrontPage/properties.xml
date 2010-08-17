@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<properties>
+	<Edit>true</Edit>
+	<Files>true</Files>
+	<Properties>true</Properties>
+	<RecentChanges>true</RecentChanges>
+	<Refactor>true</Refactor>
+	<Search>true</Search>
+	<SymbolicLinks>
+		<AccountingAdapter>file:///Volumes/nidera/Nidera/boi/accounting-adapter/accounting-adapter-fitnesse</AccountingAdapter>
+		<UbsTradeImport>file:///Volumes/nidera/Nidera/boi/ubs-trade-import/ubs-trade-import-fitnesse</UbsTradeImport>
+		<SoftmarAbwAdapter>file:///Volumes/nidera/Nidera/boi/softmar-abw-adapter/softmar-abw-adapter-fitnesse</SoftmarAbwAdapter>
+	</SymbolicLinks>
+	<Versions>true</Versions>
+	<WhereUsed>true</WhereUsed>
+</properties>

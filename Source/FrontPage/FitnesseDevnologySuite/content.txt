@@ -1,0 +1,30 @@
+!define TEST_SYSTEM {slim}
+
+!*****> '''Classpath'''
+!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
+****!
+
+!1 Amasun Test Suite
+
+>ConfigurationTest
+>BuyOneBook
+>BuyBooksCombo
+>RecommendBook
+
+
+Todo:
+- book rating
+- book recommendations (customers who bought, also bought...)
+- pay with credit card / ideal / etc.
+- calculate prices based on:
+  - pay method
+  - location
+  - priority shipping
+  - customer value
+- use discount coupon
+- save points for each euro spent
+
+
+DiscountRule {
+   Discount calculateDiscount(Order order);
+}

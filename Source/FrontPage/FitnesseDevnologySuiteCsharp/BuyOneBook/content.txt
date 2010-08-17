@@ -1,0 +1,37 @@
+!1 Buy a book
+
+One of the core businesses from Amasun is to sell books. To verify that this important core functionality works, we've created an initial acceptance 
+test which will support this business functionality.
+
+!3 Setup 
+
+Setup the inventory
+
+|initialize book inventory                                              |
+|author           |title                                         |amount|
+|S. King          |IT                                            |50    |
+|P.J. van de Sande|Large Scale Application Development with NCQRS|80    |
+|S. Johnson       |Who Moved My Cheese?                          |65    |
+
+Create the currently known customers.
+
+|intialize customer base|
+|name                   |
+|Rod Johnson            |
+|Jelle Hissink          |
+|Martin Fowler          |
+|Robert Martin          |
+
+!3 Execute
+
+|script  |buy book scenario                                                                    |
+|customer|Rod Johnson  |buys|3 |books with title|Large Scale Application Development with NCQRS|
+|customer|Jelle Hissink|buys|25|books with title|IT                                            |
+
+!3 Verification
+
+|check book inventory                                                    |
+|author           |title                                         |amount?|
+|S. King          |IT                                            |25     |
+|P.J. van de Sande|Large Scale Application Development with NCQRS|77     |
+|S. Johnson       |Who Moved My Cheese?                          |65     |

@@ -1,0 +1,4 @@
+|import                             |
+|nl.devnology.fitnesse.configuration|
+|nl.devnology.fitnesse.amasun.book  |
+|nl.devnology.fitnesse.amasun.customer  |

@@ -1,0 +1,43 @@
+!1 Buy a book
+
+One of the core businesses from Amasun is to sell books. To verify that this important core functionality works, we've created an initial acceptance 
+test which will support this business functionality.
+
+!3 Setup 
+
+Setup the inventory
+
+|initialize book inventory                                                                  |
+|author           |title                                         |isbn         |price|amount|
+|S. King          |IT                                            |0-8352-2051-6|10   |50    |
+|P.J. van de Sande|Large Scale Application Development with NCQRS|0-8352-8936-1|49   |80    |
+|S. Johnson       |Who Moved My Cheese?                          |0-8352-3891-9|25   |65    |
+
+|create promo packages                      |
+|book 1 isbn  |book 2 isbn  |discount|type  |
+|0-8352-2051-6|0-8352-8936-1|10      |AMOUNT|
+|0-8352-2051-6|0-8352-3891-9|5       |AMOUNT|
+
+Create the currently known customers.
+
+|intialize customer base|
+|name                   |
+|Rod Johnson            |
+|Jelle Hissink          |
+|Martin Fowler          |
+|Robert Martin          |
+
+!3 Execute
+
+|script  |buy book scenario                                                                           |
+|customer|Rod Johnson|buys       |1   |books with title|Large Scale Application Development with NCQRS|
+|customer|Rod Johnson|buys       |1   |books with title|IT                                            |
+|assert  |customer   |Rod Johnson|pays|49                                                             |
+
+!3 Verification
+
+|check book inventory                                                    |
+|author           |title                                         |amount?|
+|S. King          |IT                                            |25     |
+|P.J. van de Sande|Large Scale Application Development with NCQRS|77     |
+|S. Johnson       |Who Moved My Cheese?                          |65     |

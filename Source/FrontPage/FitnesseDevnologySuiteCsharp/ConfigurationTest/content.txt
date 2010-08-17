@@ -1,0 +1,10 @@
+!1 Configuration test page
+
+This page merely exists to check if your configuration has been set up correctly. Please click '''Test''' on the left side of the screen. T
+he result should be one correct, and one failed test. Please fix this by changing the input '''erick''' to '''erik''' by clicking on the '''Edit''' button on the left.
+Save the page, rerun the test, and everything should be green. If not, please let us know!
+
+|configuration test|
+|input   |output?  |
+|jonne   |jonne    |
+|erick   |erik     |
