@@ -7,8 +7,50 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Configuration/f:ConfigurationTest.cs" caret="221" fromTop="7" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customers.cs" caret="514" fromTop="18" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:BookService.cs" caret="0" fromTop="0" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Customer/f:InitializeCustomerBase.cs" caret="416" fromTop="18" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:BuyBookScenario.cs" caret="275" fromTop="9" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="123" fromTop="5" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:InitializeBookInventory.cs" caret="607" fromTop="20" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="335" fromTop="12" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="966" fromTop="31" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="652" fromTop="25" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="376" fromTop="17" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="0" fromTop="0" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="581" fromTop="19" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="596" fromTop="21" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="682" fromTop="25" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="1186" fromTop="26" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="1309" fromTop="30" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="1481" fromTop="35" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:BuyBookScenario.cs" caret="587" fromTop="17" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:BuyBookScenario.cs" caret="587" fromTop="19" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="605" fromTop="27" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="605" fromTop="23" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="605" fromTop="16" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="605" fromTop="25" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:BookService.cs" caret="196" fromTop="10" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:BookService.cs" caret="0" fromTop="0" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:InitializeBookInventory.cs" caret="504" fromTop="16" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:InitializeBookInventory.cs" caret="243" fromTop="7" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Customer/f:InitializeCustomerBase.cs" caret="417" fromTop="16" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Customer/f:InitializeCustomerBase.cs" caret="417" fromTop="18" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:BuyBookScenario.cs" caret="275" fromTop="9" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:InitializeBookInventory.cs" caret="133" fromTop="3" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="1037" fromTop="28" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="374" fromTop="12" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="334" fromTop="11" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="145" fromTop="5" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="0" fromTop="0" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="458" fromTop="15" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="417" fromTop="8" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="634" fromTop="23" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +63,60 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="prop" priority="4" />
+      <Item value="string" priority="8" />
+      <Item value="public" priority="2" />
+      <Item value="private" priority="2" />
+      <Item value="value" priority="2" />
+      <Item value="return" priority="5" />
+      <Item value="this" priority="1" />
+      <Item value="decimal" priority="0" />
+      <Item value="int" priority="1" />
+      <Item value="static" priority="1" />
+      <Item value="Inventory`0" priority="2" />
+      <Item value="new" priority="1" />
+      <Item value="Inventory" priority="0" />
+      <Item value="ArgumentException`0" priority="1" />
+      <Item value="Customer`0" priority="0" />
+      <Item value="customer" priority="1" />
+      <Item value="customerName" priority="0" />
+      <Item value="Book`0" priority="0" />
+      <Item value="Dictionary&lt;Book,int&gt;" priority="0" />
+      <Item value="if" priority="1" />
+      <Item value="books" priority="6" />
+      <Item value="currentAmount" priority="1" />
+      <Item value="amount" priority="1" />
+      <Item value="book" priority="7" />
+      <Item value="stock" priority="0" />
+      <Item value="override" priority="1" />
+      <Item value="Author" priority="1" />
+      <Item value="Title" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevnologyFitnesseDojo.Fitnesse.Amasun.Configuration.ConfigurationTest">
+      <Item value="value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DevnologyFitnesseDojo.Domain.Inventory">
+      <Item value="Instance" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="SingleOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="ContainsKey`0" priority="1" />
+      <Item value="Add`0" priority="0" />
+      <Item value="SingleOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DevnologyFitnesseDojo.Domain.Book">
+      <Item value="Title" priority="1" />
+      <Item value="Author" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="GetHashCode`0" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
