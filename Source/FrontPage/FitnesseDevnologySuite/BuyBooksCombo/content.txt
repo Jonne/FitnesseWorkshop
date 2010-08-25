@@ -40,13 +40,6 @@ Create the currently known customers.
 
 !3 Execute
 
-|script       |buy book scenario for customer|Rod Johnson                                                    |
-|customer buys|1                |books with title|Large Scale Application Development with NCQRS|
-|customer buys|1                |books with title|IT                                            |
-|place order|
-|check        |charged subtotal |59                                                             |
-|check        |applied discount |10                                                             |
-|check        |charged total    |49                                                             |
 
 !3 Verification
 

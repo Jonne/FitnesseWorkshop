@@ -50,8 +50,6 @@
     <Compile Include="Domain\Orders\Order.cs" />
     <Compile Include="Domain\Books\PromoPackage.cs" />
     <Compile Include="Fitnesse\Amasun\Book\BuyBookScenario.cs" />
-    <Compile Include="Fitnesse\Amasun\Book\BuyBookScenarioForCustomer.cs" />
-    <Compile Include="Fitnesse\Amasun\Book\CheckBookInventory.cs" />
     <Compile Include="Fitnesse\Amasun\Book\CreatePromoPackage.cs" />
     <Compile Include="Fitnesse\Amasun\Book\InitializeBookInventory.cs" />
     <Compile Include="Fitnesse\Amasun\Customer\InitializeCustomerBase.cs" />
