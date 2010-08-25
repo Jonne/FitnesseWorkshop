@@ -9,7 +9,6 @@ import nl.devnology.domain.order.Order;
 public class BookService {
     private Inventory inventory = Inventory.get();
 
-
     public void buyBooks(Order order) {
         Integer totalPriceBeforeDiscount = order.getTotalPrice();
 
@@ -38,5 +37,4 @@ public class BookService {
 
         return promoPackage.caclulateDiscount();
     }
-
 }
