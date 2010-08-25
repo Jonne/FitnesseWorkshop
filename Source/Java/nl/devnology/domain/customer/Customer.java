@@ -5,13 +5,19 @@ package nl.devnology.domain.customer;
  */
 public class Customer {
     private String name;
+    private Integer money;
 
-    public Customer(String name) {
+    public Customer(String name, Integer money) {
         this.name = name;
+        this.money = money;
     }
 
     public String getName() {
         return name;
+    }
+
+    public Integer getMoney() {
+        return money;
     }
 
     @Override
@@ -29,5 +35,9 @@ public class Customer {
     @Override
     public int hashCode() {
         return name.hashCode();
+    }
+
+    public void deductMoney(Integer money) {
+        this.money -= money;
     }
 }

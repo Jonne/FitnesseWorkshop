@@ -8,12 +8,17 @@ import nl.devnology.domain.customer.Customers;
  */
 public class IntializeCustomerBase {
     private String name;
+    private Integer money;
 
     public void execute() {
-        Customers.add(new Customer(name));
+        Customers.add(new Customer(name, money));
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setMoney(Integer money) {
+        this.money = money;
     }
 }

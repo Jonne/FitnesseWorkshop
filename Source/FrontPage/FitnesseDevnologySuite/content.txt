@@ -1,7 +1,9 @@
 !define TEST_SYSTEM {slim}
 
 !*****> '''Classpath'''
-!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
+#!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
+!path fitnesse.jar
+!path /Users/erikp/UserFiles/Projects/Personal/DevnologyFitnesseDojo/FitnesseWorkshop/out/production/FitnesseWorkshop
 ****!
 
 !1 Amasun Test Suite
@@ -14,15 +16,16 @@
 
 Todo:
 - book rating
-- book recommendations (customers who bought, also bought...)
+- book recommendations (customers who bought, also bought...) *
 - pay with credit card / ideal / etc.
 - calculate prices based on:
   - pay method
   - location
   - priority shipping
   - customer value
-- use discount coupon
+- use discount coupon *
 - save points for each euro spent
+- crazy bad test with implementation details *
 
 
 DiscountRule {

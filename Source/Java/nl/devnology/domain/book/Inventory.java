@@ -1,7 +1,11 @@
 package nl.devnology.domain.book;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import nl.devnology.domain.order.Order;
 
 /**
  * @author Erik Pragt
@@ -10,6 +14,7 @@ public class Inventory {
     private static Inventory inventory = new Inventory();
 
     private static Map<Book, Integer> books = new HashMap<Book, Integer>();
+    private static List<PromoPackage> promoPackages = new ArrayList<PromoPackage>();
 
     public static Inventory get() {
         return inventory;
@@ -39,6 +44,18 @@ public class Inventory {
         return null;
     }
 
+    public Book findByIsbn(String isbn) {
+        for(Map.Entry<Book, Integer> entry: books.entrySet()) {
+            Book book = entry.getKey();
+            if(book.getIsbn().equals(isbn)) {
+                return book;
+            }
+        }
+
+        return null;
+
+    }
+
     public Integer countBooks(Book book) {
         return books.get(book);
     }
@@ -53,5 +70,29 @@ public class Inventory {
         stock -= amount;
 
         books.put(book, stock);
+    }
+
+    public void addPromoPackage(PromoPackage promoPackage) {
+        promoPackages.add(promoPackage);
+    }
+
+
+    public PromoPackage getPromoPackage(Order order) {
+        for (PromoPackage promoPackage : promoPackages) {
+            if(promoPackage.isEligible(order)) {
+                return promoPackage;
+            }
+        }
+        return null;
+
+    }
+
+    public boolean isPromoOrder(Order order) {
+        for (PromoPackage promoPackage : promoPackages) {
+            if(promoPackage.isEligible(order)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
