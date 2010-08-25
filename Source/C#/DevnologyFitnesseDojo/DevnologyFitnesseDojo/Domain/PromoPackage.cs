@@ -15,7 +15,7 @@
             this.discountType = discountType;
         }
 
-        public int caclulateDiscount()
+        public int CaclulateDiscount()
         {
             if (discountType == DiscountType.AMOUNT)
             {

@@ -1,7 +1,10 @@
-!1 Buy a book
+!1 Functionality - Buy a book
 
 One of the core businesses from Amasun is to sell books. To verify that this important core functionality works, we've created an initial acceptance 
 test which will support this business functionality.
+
+!2 Assignment
+Make sure the test below succeeds, implement any missing functionality.
 
 !3 Setup 
 

@@ -1,10 +1,16 @@
-!1 Buy a Book Combo
+!1 Functionality - Buy a Book Combo
 
 The core of our business is to sell books. To sell as much books as possible, we've introduced the concept of package deals (or promo packages, or book combos, or just-really-good-deals, as our customers call it). Since this is such an important part of our business, we need to assert it works correctly. 
 
 There are two types of discount: one fixed price (say 10 euro's discount on the total amount, which we'll call AMOUNT), and it would be nice if we could also get a discount which is percentage based, which will deduct a certain percentage of the combination of the two books (say 25% off when buying two fantasy books). We'll probably start using this in the beginning of 2011. Or 2012. But it's very important!
 
 At the moment, we can link together books based on their ISBN code. We know it's not ideal, so in the future we should introduce our own code, but currently it works good enough, so any package can ben created by linking two books together. A promo package of more than two books is not needed at the moment, but would be nice for the future, say the end of 2013.
+
+!2 Assigment 
+
+Step 1. Make the test succeeed (Implement the testfixture(s) for the execute step)
+Step 2. Remove any duplication in this test and the previous one.
+
 
 !3 Setup 
 

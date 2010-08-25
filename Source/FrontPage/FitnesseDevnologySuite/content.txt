@@ -1,4 +1,6 @@
 !define TEST_SYSTEM {slim}
+#!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\fitsharp.dll %p}
+#!define TEST_RUNNER {C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\Runner.exe}
 
 !*****> '''Classpath'''
 #!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
@@ -11,7 +13,7 @@
 >ConfigurationTest
 >BuyOneBook
 >BuyBooksCombo
->RecommendBook
+>DiscountCoupon
 >ShippingCosts
 
 

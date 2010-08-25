@@ -19,5 +19,10 @@ namespace DevnologyFitnesseDojo.Domain
 
             return false;
         }
+
+        public void DeductMoney(int totalPriceAfterDiscount)
+        {
+            Money -= totalPriceAfterDiscount;
+        }
     }
 }

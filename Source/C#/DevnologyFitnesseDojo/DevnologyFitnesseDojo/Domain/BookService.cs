@@ -15,7 +15,7 @@ namespace DevnologyFitnesseDojo.Domain
 
             if (customer.Money >= totalPriceAfterDiscount)
             {
-                customer.Money = totalPriceAfterDiscount;
+                customer.DeductMoney(totalPriceAfterDiscount);
             }
 
             // Then deduct the inventory
@@ -36,7 +36,7 @@ namespace DevnologyFitnesseDojo.Domain
 
             PromoPackage promoPackage = inventory.GetPromoPackage(order);
 
-            return promoPackage.caclulateDiscount();
+            return promoPackage.CaclulateDiscount();
         }
     }
 }
