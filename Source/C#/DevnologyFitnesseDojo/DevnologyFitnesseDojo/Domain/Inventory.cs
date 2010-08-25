@@ -7,13 +7,14 @@ namespace DevnologyFitnesseDojo.Domain
     public class Inventory
     {
         private static readonly Inventory inventory = new Inventory();
-        
+
+        private readonly Dictionary<Book, int> books = new Dictionary<Book, int>();
+        private readonly IList<PromoPackage> promoPackages = new List<PromoPackage>();
+
         public static Inventory Instance
         {
             get { return inventory; }
         }
-
-        private readonly Dictionary<Book, int> books = new Dictionary<Book,int>();
 
         public void AddBook(Book book, int amount)
         {
@@ -25,13 +26,18 @@ namespace DevnologyFitnesseDojo.Domain
             int currentAmount = books[book];
 
             currentAmount += amount;
-            
+
             books[book] = currentAmount;
         }
 
-        public Book FindByTitle(String title)
+        public Book FindByTitle(string title)
         {
             return books.Keys.SingleOrDefault(book => book.Title == title);
+        }
+
+        public Book FindByIsbn(string isbn)
+        {
+            return books.Keys.SingleOrDefault(book => book.Isbn == isbn);
         }
 
         public int CountBooks(Book book)
@@ -50,12 +56,43 @@ namespace DevnologyFitnesseDojo.Domain
 
             if (stock - amount < 0)
             {
-                throw new ArgumentException("Not enough books in stock: current stock is " + stock + ", trying to deduct " + amount);
+                throw new ArgumentException("Not enough books in stock: current stock is " + stock + ", trying to deduct " +
+                    amount);
             }
 
             stock -= amount;
 
             books[book] = stock;
+        }
+
+        public void AddPromoPackage(PromoPackage promoPackage)
+        {
+            promoPackages.Add(promoPackage);
+        }
+
+
+        public PromoPackage GetPromoPackage(Order order)
+        {
+            foreach (PromoPackage promoPackage in promoPackages)
+            {
+                if (promoPackage.IsEligible(order))
+                {
+                    return promoPackage;
+                }
+            }
+            return null;
+        }
+
+        public bool IsPromoOrder(Order order)
+        {
+            foreach (PromoPackage promoPackage in promoPackages)
+            {
+                if (promoPackage.IsEligible(order))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

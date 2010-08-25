@@ -10,14 +10,14 @@
     <RecentFiles>
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Configuration/f:ConfigurationTest.cs" caret="221" fromTop="7" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customers.cs" caret="514" fromTop="18" />
-      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:BookService.cs" caret="0" fromTop="0" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Customer/f:InitializeCustomerBase.cs" caret="416" fromTop="18" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:BuyBookScenario.cs" caret="275" fromTop="9" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="123" fromTop="5" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:InitializeBookInventory.cs" caret="607" fromTop="20" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Fitnesse/d:Amasun/d:Book/f:CheckBookInventory.cs" caret="335" fromTop="12" />
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Inventory.cs" caret="966" fromTop="31" />
-      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="652" fromTop="25" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:BookService.cs" caret="248" fromTop="10" />
+      <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Book.cs" caret="559" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
       <File id="46DA5D95-A12F-4456-A27A-AE968AE92247/d:Domain/f:Customer.cs" caret="376" fromTop="17" />
