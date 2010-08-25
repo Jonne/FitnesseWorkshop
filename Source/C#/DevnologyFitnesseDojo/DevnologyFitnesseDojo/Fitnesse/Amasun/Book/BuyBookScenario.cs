@@ -1,5 +1,7 @@
 ﻿using System;
-using DevnologyFitnesseDojo.Domain;
+using DevnologyFitnesseDojo.Domain.Books;
+using DevnologyFitnesseDojo.Domain.Customers;
+using DevnologyFitnesseDojo.Domain.Orders;
 
 namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
 {
@@ -7,13 +9,17 @@ namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
     {
         private readonly BookService bookService = new BookService();
 
-
         public bool CustomerBuysBooksWithTitle(string customerName, int amount, String title)
         {
-            Domain.Customer customer = Customers.FindByName(customerName);
-            Domain.Book book = Inventory.Instance.FindByTitle(title);
+            Domain.Books.Book book = Inventory.FindByTitle(title);
 
-            bookService.BuyBook(customer, amount, book);
+            Domain.Customers.Customer customer = CustomerRepository.FindByName(customerName);
+
+            var order = new Order(customer);
+
+            order.AddBook(amount, book);
+
+            bookService.BuyBooks(order);
 
             return true;
         }

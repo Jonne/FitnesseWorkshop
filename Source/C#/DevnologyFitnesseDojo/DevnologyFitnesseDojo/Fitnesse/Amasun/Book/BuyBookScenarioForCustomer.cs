@@ -1,27 +1,26 @@
 ﻿using System;
-using DevnologyFitnesseDojo.Domain;
+using DevnologyFitnesseDojo.Domain.Books;
+using DevnologyFitnesseDojo.Domain.Customers;
+using DevnologyFitnesseDojo.Domain.Orders;
 
 namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
 {
     public class BuyBookScenarioForCustomer
     {
-        private readonly int beforeMoney;
         private readonly BookService bookService = new BookService();
-        private readonly Domain.Customer customer;
+        private readonly Domain.Customers.Customer customer;
         private readonly Order order;
 
         public BuyBookScenarioForCustomer(string customerName)
         {
-            customer = Customers.FindByName(customerName);
-
-            beforeMoney = customer.Money;
+            customer = CustomerRepository.FindByName(customerName);
 
             order = new Order(customer);
         }
 
         public bool CustomerBuysBooksWithTitle(int amount, String title)
         {
-            Domain.Book book = Inventory.Instance.FindByTitle(title);
+            Domain.Books.Book book = Inventory.FindByTitle(title);
 
             order.AddBook(amount, book);
 
@@ -35,9 +34,19 @@ namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
             return true;
         }
 
-        public int CustomerPayed()
+        public int AppliedDiscount()
         {
-            return beforeMoney - customer.Money;
+            return order.Discount;
+        }
+
+        public int ChargedSubtotal()
+        {
+            return order.Subtotal;
+        }
+
+        public int ChargedTotal()
+        {
+            return order.Total;
         }
     }
 }

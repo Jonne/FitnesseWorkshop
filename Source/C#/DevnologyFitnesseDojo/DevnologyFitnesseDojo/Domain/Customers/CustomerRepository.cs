@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DevnologyFitnesseDojo.Domain
+namespace DevnologyFitnesseDojo.Domain.Customers
 {
-    public class Customers
+    public class CustomerRepository
     {
         private static readonly List<Customer> customers = new List<Customer>();
 

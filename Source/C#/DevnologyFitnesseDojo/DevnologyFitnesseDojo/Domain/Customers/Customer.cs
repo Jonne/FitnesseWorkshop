@@ -1,12 +1,8 @@
-﻿using System;
-
-namespace DevnologyFitnesseDojo.Domain
+﻿namespace DevnologyFitnesseDojo.Domain.Customers
 {
     public class Customer
     {
         public string Name { get; set; }
-
-        public int Money { get; set; }
 
         public override bool Equals(object o)
         {
@@ -18,11 +14,6 @@ namespace DevnologyFitnesseDojo.Domain
             }
 
             return false;
-        }
-
-        public void DeductMoney(int totalPriceAfterDiscount)
-        {
-            Money -= totalPriceAfterDiscount;
         }
     }
 }

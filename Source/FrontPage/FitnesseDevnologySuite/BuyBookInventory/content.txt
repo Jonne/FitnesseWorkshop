@@ -1,10 +1,10 @@
-!1 Functionality - Buy a book
+!1 Functionality - Buying a book modifies inventory
 
-One of the core businesses from Amasun is to sell books. To verify that this important core functionality works, we've created an initial acceptance 
+One of the core businesses from Amasun is to sell books. To verify that the inventory part of this core functionality works, we've created an initial acceptance 
 test which will support this business functionality.
 
-!2 Assignment
-Make sure the test below succeeds, implement any missing functionality.
+!2 Exercise
+The test driver for the verification step is missing. Implement it and make sure the test succeeds.
 
 !3 Setup 
 

@@ -6,9 +6,11 @@ There are two types of discount: one fixed price (say 10 euro's discount on the 
 
 At the moment, we can link together books based on their ISBN code. We know it's not ideal, so in the future we should introduce our own code, but currently it works good enough, so any package can ben created by linking two books together. A promo package of more than two books is not needed at the moment, but would be nice for the future, say the end of 2013.
 
-!2 Assigment 
+!2 Exercise
 
-Step 1. Make the test succeeed (Implement the testfixture(s) for the execute step)
+Step 1. Create a script and fixture for the execute step, that places an order with two books from a promotion package and checks if the charged Subtotal, Discount and Total are correct.
+
+
 Step 2. Remove any duplication in this test and the previous one.
 
 
@@ -30,11 +32,11 @@ Setup the inventory
 Create the currently known customers.
 
 |intialize customer base|
-|name           |money  |
-|Rod Johnson    |1000   |
-|Jelle Hissink  |1100   |
-|Martin Fowler  |900    |
-|Robert Martin  |300    |
+|name           |
+|Rod Johnson    |
+|Jelle Hissink  |
+|Martin Fowler  |
+|Robert Martin  |
 
 !3 Execute
 
@@ -42,7 +44,9 @@ Create the currently known customers.
 |customer buys|1                |books with title|Large Scale Application Development with NCQRS|
 |customer buys|1                |books with title|IT                                            |
 |place order|
-|check        |customer payed   |49                                                             |
+|check        |charged subtotal |59                                                             |
+|check        |applied discount |10                                                             |
+|check        |charged total    |49                                                             |
 
 !3 Verification
 

@@ -1,22 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DevnologyFitnesseDojo.Domain.Orders;
 
-namespace DevnologyFitnesseDojo.Domain
+namespace DevnologyFitnesseDojo.Domain.Books
 {
     public class Inventory
     {
-        private static readonly Inventory inventory = new Inventory();
+        private static readonly Dictionary<Book, int> books = new Dictionary<Book, int>();
+        private static readonly IList<PromoPackage> promoPackages = new List<PromoPackage>();
 
-        private readonly Dictionary<Book, int> books = new Dictionary<Book, int>();
-        private readonly IList<PromoPackage> promoPackages = new List<PromoPackage>();
-
-        public static Inventory Instance
-        {
-            get { return inventory; }
-        }
-
-        public void AddBook(Book book, int amount)
+        public static void AddBook(Book book, int amount)
         {
             if (!books.ContainsKey(book))
             {
@@ -30,17 +24,22 @@ namespace DevnologyFitnesseDojo.Domain
             books[book] = currentAmount;
         }
 
-        public Book FindByTitle(string title)
+        public static Book FindByTitle(string title)
         {
             return books.Keys.SingleOrDefault(book => book.Title == title);
         }
 
-        public Book FindByIsbn(string isbn)
+        public static Book FindByIsbn(string isbn)
         {
             return books.Keys.SingleOrDefault(book => book.Isbn == isbn);
         }
 
-        public int CountBooks(Book book)
+        /// <summary>
+        /// Gets the number of books in the inventory.
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
+        public static int CountBooks(Book book)
         {
             if (!books.ContainsKey(book))
             {
@@ -50,7 +49,12 @@ namespace DevnologyFitnesseDojo.Domain
             return books[book];
         }
 
-        public void DeductInventory(Book book, int amount)
+        /// <summary>
+        /// Deducts the amount given for the specified book in the inventory.
+        /// </summary>
+        /// <param name="book"></param>
+        /// <param name="amount"></param>
+        public static void DeductInventory(Book book, int amount)
         {
             int stock = books[book];
 
@@ -65,13 +69,12 @@ namespace DevnologyFitnesseDojo.Domain
             books[book] = stock;
         }
 
-        public void AddPromoPackage(PromoPackage promoPackage)
+        public static void AddPromoPackage(PromoPackage promoPackage)
         {
             promoPackages.Add(promoPackage);
         }
 
-
-        public PromoPackage GetPromoPackage(Order order)
+        public static PromoPackage GetPromoPackage(Order order)
         {
             foreach (PromoPackage promoPackage in promoPackages)
             {
@@ -83,7 +86,7 @@ namespace DevnologyFitnesseDojo.Domain
             return null;
         }
 
-        public bool IsPromoOrder(Order order)
+        public static bool IsPromoOrder(Order order)
         {
             foreach (PromoPackage promoPackage in promoPackages)
             {

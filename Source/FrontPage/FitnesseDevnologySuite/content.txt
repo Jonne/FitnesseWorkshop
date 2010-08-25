@@ -1,36 +1,18 @@
 !define TEST_SYSTEM {slim}
-#!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\fitsharp.dll %p}
-#!define TEST_RUNNER {C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\Runner.exe}
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner,C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\fitsharp.dll %p}
+!define TEST_RUNNER {C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\Slim\Runner.exe}
 
 !*****> '''Classpath'''
-#!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
-!path fitnesse.jar
-!path /Users/erikp/UserFiles/Projects/Personal/DevnologyFitnesseDojo/FitnesseWorkshop/out/production/FitnesseWorkshop
+!path C:\msysgit\msysgit\FitnesseWorkshop\Source\C#\DevnologyFitnesseDojo\DevnologyFitnesseDojo\bin\Debug\DevnologyFitnesseDojo.dll
+#!path fitnesse.jar
+#!path /Users/erikp/UserFiles/Projects/Personal/DevnologyFitnesseDojo/FitnesseWorkshop/out/production/FitnesseWorkshop
 ****!
 
 !1 Amasun Test Suite
 
 >ConfigurationTest
->BuyOneBook
+>BuyBookInventory
 >BuyBooksCombo
 >DiscountCoupon
 >ShippingCosts
 
-
-Todo:
-- book rating
-- book recommendations (customers who bought, also bought...) *
-- pay with credit card / ideal / etc.
-- calculate prices based on:
-  - pay method
-  - location
-  - priority shipping
-  - customer value
-- use discount coupon *
-- save points for each euro spent
-- crazy bad test with implementation details *
-
-
-DiscountRule {
-   Discount calculateDiscount(Order order);
-}

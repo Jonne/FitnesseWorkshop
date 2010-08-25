@@ -1,4 +1,5 @@
 ﻿using DevnologyFitnesseDojo.Domain;
+using DevnologyFitnesseDojo.Domain.Books;
 
 namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
 {
@@ -9,9 +10,9 @@ namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
 
         public int Amount()
         {
-            var book = new Domain.Book { Author = author, Title = title };
+            var book = new Domain.Books.Book { Author = author, Title = title };
 
-            return Inventory.Instance.CountBooks(book);
+            return Inventory.CountBooks(book);
         }
 
         public void SetTitle(string title)

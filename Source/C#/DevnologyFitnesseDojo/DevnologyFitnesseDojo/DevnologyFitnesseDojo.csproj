@@ -41,14 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Book.cs" />
-    <Compile Include="Domain\BookService.cs" />
-    <Compile Include="Domain\Customer.cs" />
-    <Compile Include="Domain\Customers.cs" />
-    <Compile Include="Domain\DiscountType.cs" />
-    <Compile Include="Domain\Inventory.cs" />
-    <Compile Include="Domain\Order.cs" />
-    <Compile Include="Domain\PromoPackage.cs" />
+    <Compile Include="Domain\Books\Book.cs" />
+    <Compile Include="Domain\Books\BookService.cs" />
+    <Compile Include="Domain\Customers\Customer.cs" />
+    <Compile Include="Domain\Customers\CustomerRepository.cs" />
+    <Compile Include="Domain\Books\DiscountType.cs" />
+    <Compile Include="Domain\Books\Inventory.cs" />
+    <Compile Include="Domain\Orders\Order.cs" />
+    <Compile Include="Domain\Books\PromoPackage.cs" />
+    <Compile Include="Fitnesse\Amasun\Book\BuyBookScenario.cs" />
     <Compile Include="Fitnesse\Amasun\Book\BuyBookScenarioForCustomer.cs" />
     <Compile Include="Fitnesse\Amasun\Book\CheckBookInventory.cs" />
     <Compile Include="Fitnesse\Amasun\Book\CreatePromoPackage.cs" />

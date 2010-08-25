@@ -1,46 +1,40 @@
 ﻿using System;
 using DevnologyFitnesseDojo.Domain;
+using DevnologyFitnesseDojo.Domain.Books;
 
 namespace DevnologyFitnesseDojo.Fitnesse.Amasun.Book
 {
     public class CreatePromoPackage
     {
-        private BookService bookService = new BookService();
 
-        private Inventory inventory;
-        private Domain.Book book1;
-        private Domain.Book book2;
+        private Domain.Books.Book book1;
+        private Domain.Books.Book book2;
         private int discountAmount;
         private DiscountType discountType;
 
-        public CreatePromoPackage()
+        public void SetBook1Isbn(string book1isbn)
         {
-            inventory = Inventory.Instance;
+            book1 = Inventory.FindByIsbn(book1isbn);
         }
 
-        public void setBook1Isbn(string book1isbn)
+        public void SetBook2Isbn(string book2isbn)
         {
-            book1 = inventory.FindByIsbn(book1isbn);
+            book2 = Inventory.FindByIsbn(book2isbn);
         }
 
-        public void setBook2Isbn(string book2isbn)
-        {
-            book2 = inventory.FindByIsbn(book2isbn);
-        }
-
-        public void setDiscountAmount(int discount)
+        public void SetDiscountAmount(int discount)
         {
             discountAmount = discount;
         }
 
-        public void setDiscountType(String type)
+        public void SetDiscountType(String type)
         {
             discountType = (DiscountType)Enum.Parse(typeof(DiscountType), type);
         }
 
-        public void execute()
+        public void Execute()
         {
-            inventory.AddPromoPackage(new PromoPackage(book1, book2, discountAmount, discountType));
+            Inventory.AddPromoPackage(new PromoPackage(book1, book2, discountAmount, discountType));
         }
     }
 }

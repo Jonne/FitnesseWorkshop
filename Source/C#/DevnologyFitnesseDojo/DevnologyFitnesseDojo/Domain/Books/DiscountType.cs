@@ -1,4 +1,4 @@
-﻿namespace DevnologyFitnesseDojo.Domain
+﻿namespace DevnologyFitnesseDojo.Domain.Books
 {
     public enum DiscountType
     {

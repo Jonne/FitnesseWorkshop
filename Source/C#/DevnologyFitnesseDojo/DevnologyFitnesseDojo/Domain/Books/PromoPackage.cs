@@ -1,4 +1,6 @@
-﻿namespace DevnologyFitnesseDojo.Domain
+﻿using DevnologyFitnesseDojo.Domain.Orders;
+
+namespace DevnologyFitnesseDojo.Domain.Books
 {
     public class PromoPackage
     {

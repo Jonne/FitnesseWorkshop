@@ -1,5 +1,5 @@
 ﻿
-namespace DevnologyFitnesseDojo.Domain
+namespace DevnologyFitnesseDojo.Domain.Books
 {
     public class Book
     {
