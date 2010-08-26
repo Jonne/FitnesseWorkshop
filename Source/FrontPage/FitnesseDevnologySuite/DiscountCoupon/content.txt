@@ -6,3 +6,20 @@ Our marketing team wants to lure new customers to our website by advertising wit
 
 1. Implement this functionality in an ATDD fashion, first create the specs, then the testfixtures and finally implement the functionality itself. 
 
+!3 Setup 
+
+|Initialize discount coupons    |
+|Coupon code|Discount percentage|
+|23dfd      |10                 |
+|dfgdg3     |20                 |
+
+!3 Execute
+
+|script             |buy book scenario for customer|Rod Johnson                                                    |
+|customer buys      |1                             |books with title|Large Scale Application Development with NCQRS|
+|customer buys      |1                             |books with title|IT                                            |
+|provide coupon code|dfgdg3                                                                                        |
+|place order                                                                                                       |
+|check              |charged subtotal              |59                                                             |
+|check              |applied discount              |12                                                             |
+|check              |charged total                 |47                                                             |

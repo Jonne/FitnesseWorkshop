@@ -8,13 +8,7 @@ The test driver for the verification step is missing. Implement it and make sure
 
 !3 Setup 
 
-Setup the inventory
-
-|initialize book inventory                                              |
-|author           |title                                         |amount|
-|S. King          |IT                                            |50    |
-|P.J. van de Sande|Large Scale Application Development with NCQRS|80    |
-|S. Johnson       |Who Moved My Cheese?                          |65    |
+!include InventoryWithBooksContext
 
 Create the currently known customers.
 
